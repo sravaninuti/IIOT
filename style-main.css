@@ -1,0 +1,98 @@
+/*body tiles styling*/
+.tiles {
+    margin: 100px auto;
+}
+
+.tile-container > .tile {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px 3px #a3a3a3;
+    position: relative;
+    background-color: white;
+}
+
+.tile-container > .tile:hover {
+    box-shadow: 5px 5px 10px 3px black;
+    cursor: pointer;
+}
+
+.tile-header {
+    border-bottom: 2px solid black;
+    position: relative;
+    height: 30%;
+}
+
+.article-img {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.author-img {
+    border-radius: 50%;
+    /*border: 1px solid black;*/
+    height: 98%;
+    width: 95.5%;
+}
+
+.details {
+    width: 70%;
+    float: left;
+    padding-left: 5%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    font-family: 'Merriweather', serif;
+    font-size: 1.15rem;
+}
+
+.article-sum {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Slabo 27px' , serif;
+}
+
+.goto-art {
+    position: absolute;
+    right: 0;
+    transform: translateX(-100%);
+}
+
+.tile-footer {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    font-family: 'Merriweather' , serif;
+    font-size: 1.3rem;
+    padding-left: 15px;
+}
+
+
+@media only screen and (min-width : 480px) {
+    .tiles > .tile-container {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width : 839px) {
+    .tiles > .tile-container {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width : 1114px) {
+    .tiles > .tile-container {
+        width: 33.33%;
+        float: left;
+    }
+}
