@@ -1,0 +1,28 @@
+
+.article-descp {
+    margin: 100px 5%;
+    background-color: white;
+}
+
+.article-descp .article-header {
+    padding: 5% 5% 0 5%;
+}
+.article-descp .article-img {
+    height: 100px;
+    width: 100px;
+}
+
+.article-descp .article-title, .article-descp .article-author, .article-descp .article-date {
+    font-family: 'Merriweather' , serif;
+}
+
+.article-descp .article-data {
+    font-family: 'Slabo 27px' , serif;
+    font-size: 1.75rem;
+    padding: 2% 5% 5% 5%;
+    text-align: justify;
+}
+
+.article-descp .media-body {
+    padding-left: 2%;
+}
