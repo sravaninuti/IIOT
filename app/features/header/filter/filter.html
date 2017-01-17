@@ -1,0 +1,9 @@
+<ul class="tree">
+    <li class="filter-heading">Select Month and Date</li>
+    <ul class="month-filter" ng-repeat="m in filterVm.dates">
+        <li class="month">{{m.epoch[0] | date:'MMMM'}}</li>
+        <ul class="day-filter" ng-repeat="d in m.epoch">
+            <li ng-class="filterVm.selectedDate === d ? 'selected': ''" ng-click="filterVm.sendDate(d)" class="day">{{d | date:'MMM dd'}}</li>
+        </ul>
+    </ul>
+</ul>

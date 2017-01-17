@@ -1,0 +1,52 @@
+.tree, .tree ul {
+    list-style: none;
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+.tree ul {
+    margin-left: 2em;
+    position: relative;
+}
+
+.tree ul:before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 1px solid;
+    bottom: 11px;
+}
+
+.tree li {
+    margin: 0;
+    padding:0 1em;
+    line-height:1.75em;
+    font-size: 1.5rem;
+    font-weight:700;
+    position: relative;
+}
+
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+
+.tree li:hover, .tree li.selected {
+    font-size: 1.75rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.tree li.selected {
+    color: blue;
+}

@@ -1,0 +1,25 @@
+<div>
+    <div class="article-descp">
+        <div class="media article-header">
+            <div class="media-left media-middle">
+                <img class="media-object img-circle article-img" ng-src="{{articleVm.article.thread.main_image || 'resources/images/iiot_default.jpg'}}"/>
+            </div>
+            <div class="media-body">
+                <h2 class="media-heading article-title">
+                    {{articleVm.article.title}}
+                </h2>
+                <h3 class="media-heading article-author">
+                    {{articleVm.article.author || 'No Author'}}
+                </h3>
+                <h4 class="media-heading article-date">
+                    {{articleVm.article.published | date:'medium'}}
+                </h4>
+            </div>
+        </div>
+        <div class="article-data-container">
+            <div class="article-data">
+                {{articleVm.article.text}}
+            </div>
+        </div>
+    </div>
+</div>

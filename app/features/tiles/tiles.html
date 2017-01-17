@@ -1,0 +1,46 @@
+<div class="tiles">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4 article-tile" ng-repeat="t in tilesVm.data.posts | limitTo: 20 | orderBy:'-published'">
+                <div class="container-fluid panel panel-default">
+                    <div class="row panel-heading">
+                        <div class="col-xs-4 col-md-3">
+                            <img class="img-responsive img-circle center-block author-img" ng-src="{{t.thread.main_image || 'resources/images/iiot_default.jpg'}}"/>
+                        </div>
+                        <div class="col-xs-8 col-md-9 panel-title details">
+                            <h4 class="artTitle">
+                                {{t.title}}
+                            </h4>
+                            <h5 class="author">
+                                {{t.author || 'No Author'}}
+                            </h5>
+                            <h6 class="date">
+                                {{t.published | date:'medium'}}
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        {{t.text}}
+                    </div>
+
+                    <div class="row panel-footer">
+                        <div class="col-xs-6">
+                            <a class="readmore" ng-click="tilesVm.setArticleData(t)">
+                                More
+                            </a>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <a ng-href="{{t.url}}" target="_blank" class="goto-art">
+                                Article
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="!tilesVm.data.posts.length">
+                <h3 class="text-center">Loading...</h3>
+            </div>
+        </div>
+    </div>
+</div>
