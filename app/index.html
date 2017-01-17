@@ -1,231 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="IIOT">
 <head>
     <meta charset="utf-8">
+    <title> IIOT </title>
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="./resources/icons/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style-header.css">
-    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="features/header/header.css">
+    <link rel="stylesheet" href="features/header/filter/filter.css">
+    <link rel="stylesheet" href="features/tiles/tiles.css">
+    <link rel="stylesheet" href="features/article/article.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Limelight|Merriweather|Pacifico" rel="stylesheet">
-    <!--<script src="script.js"></script>-->
-    <title> IIOT </title>
 </head>
 <body>
-<header>
-    <div class="container-fluid">
-        <div class="page-header row">
-            <div class=" col-xs-3">
-                <a href="index.html">
-                    <img class="img-responsive center-block img-circle logo" src="./resources/images/logo.png"/>
-                </a>
-            </div>
-            <div class="col-xs-6 text-center">
-                <div class="title">IIOT</div>
-            </div>
-            <div class="col-xs-3 text-center">
-                <button type="button" class="btn btn-default btn-lg" aria-label="Center Align">
-                    <span class="fa fa-filter fa-2x"></span>
-                </button>
-            </div>
-        </div>
+    <div ng-include="'features/header/header.html'">
     </div>
-</header>
 
-<div class="tiles">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="container-fluid panel panel-default">
-                    <div class="row panel-heading">
-                        <div class="col-xs-4 col-md-3">
-                            <img class="img-responsive img-circle center-block author-img" src="./resources/images/author_img.jpg"/>
-                        </div>
-                        <div class="col-xs-8 col-md-9 panel-title details">
-                            <h4 class="artTitle">
-                                Article Title Article Title Article Title Article Title
-                            </h4>
-                            <h5 class="author">
-                                Author
-                            </h5>
-                            <h6 class="date">
-                                MM/DD/YY
-                            </h6>
-                        </div>
-                    </div>
+    <div ui-view></div>
 
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada est congue mi iaculis hendrerit. Nulla cursus, magna eget iaculis euismod, lectus dui dignissim lacus, quis lacinia risus massa vitae lorem.
-                    </div>
-
-                    <div class="row panel-footer">
-                        <div class="col-xs-6">
-                            <a href="./article/article.html" class="readmore">
-                                More
-                            </a>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="index.html" class="goto-art">
-                                Article
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="container-fluid panel panel-default">
-                    <div class="row panel-heading">
-                        <div class="col-xs-4 col-md-3">
-                            <img class="img-responsive img-circle center-block author-img" src="./resources/images/author_img.jpg"/>
-                        </div>
-                        <div class="col-xs-8 col-md-9 panel-title details">
-                            <h4 class="artTitle">
-                                Article Title Article Title Article Title Article Title
-                            </h4>
-                            <h5 class="author">
-                                Author
-                            </h5>
-                            <h6 class="date">
-                                MM/DD/YY
-                            </h6>
-                        </div>
-                    </div>
-
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada est congue mi iaculis hendrerit. Nulla cursus, magna eget iaculis euismod, lectus dui dignissim lacus, quis lacinia risus massa vitae lorem.
-                    </div>
-
-                    <div class="row panel-footer">
-                        <div class="col-xs-6">
-                            <a href="./article/article.html" class="readmore">
-                                More
-                            </a>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="index.html" class="goto-art">
-                                Article
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="container-fluid panel panel-default">
-                    <div class="row panel-heading">
-                        <div class="col-xs-4 col-md-3">
-                            <img class="img-responsive img-circle center-block author-img" src="./resources/images/author_img.jpg"/>
-                        </div>
-                        <div class="col-xs-8 col-md-9 panel-title details">
-                            <h4 class="artTitle">
-                                Article Title Article Title Article Title Article Title
-                            </h4>
-                            <h5 class="author">
-                                Author
-                            </h5>
-                            <h6 class="date">
-                                MM/DD/YY
-                            </h6>
-                        </div>
-                    </div>
-
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada est congue mi iaculis hendrerit. Nulla cursus, magna eget iaculis euismod, lectus dui dignissim lacus, quis lacinia risus massa vitae lorem.
-                    </div>
-
-                    <div class="row panel-footer">
-                        <div class="col-xs-6">
-                            <a href="./article/article.html" class="readmore">
-                                More
-                            </a>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="index.html" class="goto-art">
-                                Article
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="container-fluid panel panel-default">
-                    <div class="row panel-heading">
-                        <div class="col-xs-4 col-md-3">
-                            <img class="img-responsive img-circle center-block author-img" src="./resources/images/author_img.jpg"/>
-                        </div>
-                        <div class="col-xs-8 col-md-9 panel-title details">
-                            <h4 class="artTitle">
-                                Article Title Article Title Article Title Article Title
-                            </h4>
-                            <h5 class="author">
-                                Author
-                            </h5>
-                            <h6 class="date">
-                                MM/DD/YY
-                            </h6>
-                        </div>
-                    </div>
-
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada est congue mi iaculis hendrerit. Nulla cursus, magna eget iaculis euismod, lectus dui dignissim lacus, quis lacinia risus massa vitae lorem.
-                    </div>
-
-                    <div class="row panel-footer">
-                        <div class="col-xs-6">
-                            <a href="./article/article.html" class="readmore">
-                                More
-                            </a>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="index.html" class="goto-art">
-                                Article
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<aside class="filter-container">
-    <ul class="tree">
-        <li class="filter-heading">Select Year/Month</li>
-        <ul class="year-filter">
-            <li class="year">2016</li>
-            <ul class="month-filter">
-                <li class="month">December</li>
-                <li class="month">November</li>
-                <li class="month">October</li>
-                <li class="month">September</li>
-                <li class="month">August</li>
-                <li class="month">July</li>
-                <li class="month">June</li>
-                <li class="month">May</li>
-                <li class="month">April</li>
-                <li class="month">March</li>
-                <li class="month">February</li>
-                <li class="month">January</li>
-            </ul>
-            <li class="year">2015</li>
-            <ul class="month-filter">
-                <li class="month">December</li>
-                <li class="month">November</li>
-                <li class="month">October</li>
-                <li class="month">September</li>
-                <li class="month">August</li>
-                <li class="month">July</li>
-                <li class="month">June</li>
-                <li class="month">May</li>
-                <li class="month">April</li>
-                <li class="month">March</li>
-                <li class="month">February</li>
-                <li class="month">January</li>
-            </ul>
-        </ul>
-    </ul>
-</aside>
-
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <script src="app-module.js"></script>
+    <script src="features/header/header.module.js"></script>
+    <script src="features/header/header.controller.js"></script>
+    <script src="features/header/filter/filter.module.js"></script>
+    <script src="features/header/filter/filter.controller.js"></script>
+    <script src="features/header/filter/filter.directive.js"></script>
+    <script src="features/tiles/tiles.module.js"></script>
+    <script src="features/article/article.module.js"></script>
+    <script src="features/tiles/tiles.service.js"></script>
+    <script src="features/article/article.service.js"></script>
+    <script src="features/tiles/tiles.controller.js"></script>
+    <script src="features/article/article.controller.js"></script>
 </body>
 </html>

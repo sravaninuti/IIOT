@@ -1,0 +1,55 @@
+/*header style*/
+
+html, body{
+    background-color: #f8f0f9;
+}
+
+.page-header {
+    background-color: white;
+    margin: 0 0 20px 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.logo {
+    border: 2px solid black;
+    width: 70px;
+}
+
+.logo:hover {
+    border: 4px solid #9e9e9e;
+}
+
+.fa-filter {
+    color: #6f6f6f;
+}
+
+.title {
+    font-family: 'Limelight', cursive;
+    font-size: 4.5rem;
+}
+
+.filter-container {
+    position: fixed;
+    top: 75px;
+    right: -300px;
+    width: 300px;
+    z-index: 100;
+    background: #f9f9f9;
+    height: calc(100vh - 75px);
+    overflow: scroll;
+    transition: all 0.5s ease-in;
+}
+
+.filterHide {
+    right: -300px;
+}
+
+.filterShow {
+    right: 0;
+}
