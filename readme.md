@@ -1,1 +1,1 @@
-## To collect and display articles on IIOT
+## To collect from webhose and display articles on IIOT
